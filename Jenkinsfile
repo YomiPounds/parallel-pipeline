@@ -10,7 +10,7 @@ pipeline{
                 }
                 stage('sub-job2'){
                     steps{
-                        echo "I am a senior Devops Engineer"
+                        echo "I am a big senior Devops Engineer"
                     }
                 }
             }
