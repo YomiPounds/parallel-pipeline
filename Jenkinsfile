@@ -10,7 +10,7 @@ pipeline{
             parallel{
                 stage('sub-job1'){
                     steps{
-                        echo "I am a Devops Engineer"
+                        echo "I am a senior and well trained Devops Engineer"
                     }
                 }
                 stage('sub-job2'){
