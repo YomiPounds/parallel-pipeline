@@ -17,7 +17,7 @@ pipeline{
         }
         stage('mainjob-2'){
             steps{
-                echo "I am now a big boy"
+                echo "I am now a big big boy"
             }
         }
     }
