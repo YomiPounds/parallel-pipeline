@@ -1,6 +1,11 @@
 pipeline{
     agent any 
     stages{
+        stage('chkout'){
+            steps{
+               checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/YomiPounds/parallel-pipeline.git']]])
+            }
+        }
         stage('paralle-job'){
             parallel{
                 stage('sub-job1'){
